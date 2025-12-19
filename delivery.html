@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Доставка</title>
+    <link rel="stylesheet" href="delivery-style.css">
+    <link rel="stylesheet" href="main-style.css">
+</head>
+<body>
+    <script src="header-nocategory.js"> </script>
+    <div class="layout-container">
+        
+        <h1 class="page-title">Доставка</h1>
+        <div class="divider"></div>
+
+        <div class="checkout-wrapper">
+            
+            <form class="checkout-form">
+                
+                <div class="section-title">Контактная информация</div>
+                <div class="form-group">
+                    <input type="email" class="input-full" placeholder="Email">
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="news">
+                    <label for="news">Подписаться на рассылку</label>
+                </div>
+
+                <div class="section-title">Адрес доставки</div>
+                
+                <div class="form-group">
+                    <select class="input-full">
+                        <option>Город</option>
+                        <option>Москва</option>
+                        <option>Санкт-Петербург</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Фамилия">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="input-full" placeholder="Адрес">
+                </div>
+
+                <div class="form-row">
+                    <input type="text" placeholder="кв">
+                    <input type="text" placeholder="подъезд">
+                    <input type="text" placeholder="домофон">
+                    <input type="text" placeholder="этаж">
+                </div>
+
+                <div class="form-group">
+                    <input type="tel" class="input-full" placeholder="телефон для связи с курьером">
+                </div>
+
+                <button type="button" class="btn-black">К оплате</button>
+
+            </form>
+
+            <div class="checkout-summary">
+                
+                <div class="summary-item">
+                    <div class="img-wrapper">
+                        <div class="qty-badge">1</div>
+                        <img src="image/jacket/jacket1.svg" alt="Puffer">
+                    </div>
+                    <div class="item-info">
+                        <div class="item-name">Puffer Black</div>
+                        <div class="item-variant">M</div>
+                    </div>
+                    <div class="item-price">190$</div>
+                </div>
+
+                <div class="summary-item">
+                    <div class="img-wrapper">
+                        <div class="qty-badge">1</div>
+                        <img src="image/glove/glove.svg" alt="Gloves">
+                    </div>
+                    <div class="item-info">
+                        <div class="item-name">Imperial Gloves</div>
+                        <div class="item-variant">M</div>
+                    </div>
+                    <div class="item-price">70$</div>
+                </div>
+
+                <div class="promo-row">
+                    <input type="text" class="promo-input-small" placeholder="Промокод">
+                    <button class="btn-apply">Применить</button>
+                </div>
+
+                <div class="cost-row">
+                    <span>Стоимость</span>
+                    <span>270$</span>
+                </div>
+                <div class="cost-row">
+                    <span>Доставка</span>
+                    <span>бесплатно</span>
+                </div>
+                <div class="cost-row">
+                    <span>Промокод (Name)</span>
+                    <span>-10$</span>
+                </div>
+
+                <div class="total-final">
+                    <span>Итого</span>
+                    <span>260$</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
