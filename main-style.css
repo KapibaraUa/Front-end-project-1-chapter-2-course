@@ -108,7 +108,9 @@ text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    text-decoration: none; 
+    color: inherit; 
+    cursor: pointer; 
 }
 .product-card img
 {
