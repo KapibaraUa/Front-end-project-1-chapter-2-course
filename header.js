@@ -8,11 +8,11 @@ const header = `<header>
                 <a href="#"><img  src="assets/img/login.svg" alt=""></a>
             </div>
             <div>
-                <img src="assets/img/logo 1.svg" alt="">
+                <a href="index.html"><img src="assets/img/logo 1.svg" alt=""></a>
             </div>
             <div class="btnimg">
                 <a href="#"><img src="assets/img/search.svg" alt=""></a>
-                <a href="#"><img src="assets/img/cart.svg" alt=""></a>
+                <a href="cart.html"><img src="assets/img/cart.svg" alt=""></a>
             </div>
         </div>
         <div class="containernav">
