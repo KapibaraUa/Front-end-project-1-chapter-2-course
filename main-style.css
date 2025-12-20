@@ -144,3 +144,10 @@ color: #000000;
 
 }
 
+.containerfooter
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
