@@ -1,0 +1,129 @@
+.login {
+    width: 1100px;
+    margin: 40px auto;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.login h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+}
+
+.info {
+    margin: 0 0 50px 0;
+    font-size: 18px;
+}
+
+.info span {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.content {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+.menu {
+    width: 260px;
+    padding-top: 10px;
+}
+
+.menu-item {
+    margin-bottom: 24px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.menu-item.active {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.tab-area {
+    flex: 1;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
+
+.form input {
+    display: block;
+    width: 520px;
+    padding: 8px 10px;
+    margin-bottom: 16px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+}
+
+.check {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.check input {
+    width: 18px;
+    height: 18px;
+}
+
+.fav-item {
+    display: flex;
+    gap: 26px;
+    align-items: flex-start;
+    margin-bottom: 44px;
+}
+
+.fav-item img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+}
+
+.fav-title {
+    font-size: 56px;
+    line-height: 1;
+    margin: 0 0 8px 0;
+}
+
+.fav-sub {
+    font-size: 22px;
+    opacity: 0.7;
+    margin: 0 0 10px 0;
+}
+
+.fav-price {
+    font-size: 22px;
+    margin: 0 0 14px 0;
+}
+
+.fav-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.fav-actions button {
+    padding: 8px 12px;
+    font-family: "Courier New", Courier, monospace;
+    cursor: pointer;
+}
+
+.fav-actions .trash {
+    width: 36px;
+    height: 36px;
+}
+
+.empty {
+    font-size: 22px;
+    opacity: 0.7;
+}
