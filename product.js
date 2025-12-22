@@ -10,5 +10,5 @@ thumbnails.forEach(img => { img.addEventListener('click', function() { mainImage
         {
             sizeButtons.forEach(b => b.classList.remove('active'));
             this.classList.add('active');
-        });s
+        });
     });
