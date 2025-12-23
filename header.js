@@ -1,8 +1,14 @@
 const header = `<header>
     <div class="containerMain">
         <div class="containerhighttext">
-            <p>New Arrivals</p>
+        <div class="contbuttons">
+            <button class="contbuttons1">Men</button>
+            <button class="contbuttons2">Women</button>
         </div>
+            <p>New Arrivals</p>
+            <div></div>
+        </div>
+        
         <div class="containerlogo">
         <div class="btnimg">
                 <a href="login.html"><img  src="assets/img/login.svg" alt=""></a>

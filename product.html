@@ -5,7 +5,7 @@
     <title>Jacket 1</title>
     <link rel="stylesheet" href="product-style.css">
     <link rel="stylesheet" href="main-style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <script src="jquery-3.5.1.min.js"></script>
 </head>
 <body>
 <script src="header.js"> </script>
@@ -34,13 +34,13 @@
 
         <a class="buy" href="cart.html">BUY</a>
         <div class="tabs">
-            <span class="active">DESCRIPTION</span>
-            <span>SIZE HELP</span>
-            <span>SHIPPING</span>
-            <span>RETURNS</span>
+            <span id="description" class="active">DESCRIPTION</span>
+            <span id="size">SIZE HELP</span>
+            <span id="shipping">SHIPPING</span>
+            <span id="returns">RETURNS</span>
         </div>
 
-        <p class="description">
+        <p id="desc" class="description">
             Puffer jacket made from crinkle nylon fabric with a distressed raw cut finish on the seams.
             The back is embellished with a silver-tone injection-molded logo in distressed lettering.
             Stand collar. Thick synthetic filling for warmth and comfort. Boxy fit.
@@ -48,11 +48,31 @@
         </p>
     </div>
 </main>
-<script src="product.js">
-    
+<script>
+    $(document).ready(function() {
+    });
+    const contentData = {
+                desc: "Puffer jacket made from crinkle nylon fabric with a distressed raw cut finish on the seams. The back is embellished with a silver-tone injection-molded logo in distressed lettering. Stand collar. Thick synthetic filling for warmth and comfort. Boxy fit. Windproof and waterproof. Two-way separating front zipper.",
+                size: "Here fits the size guide table or text. Example: S - Chest 50cm, M - Chest 52cm, L - Chest 54cm. Please check your measurements before ordering.",
+                shipping: "We ship worldwide using DHL Express. Standard shipping takes 3-5 business days. Free shipping on orders over $200.",
+                returns: "You can return any item within 14 days of receipt. The item must be in original condition with tags attached."
+            };
+            $('.tabs span').click(function() {
+                
+                $('.tabs span').removeClass('active');
+                $(this).addClass('active');
+
+                
+                let clickedId = $(this).attr('id');
+
+                
+                $('#desc').text(content[clickedId]);
+            });
+
 </script>
 <script src="footer.js">
-    
-</script>
+
+    </script>
+<script src="product.js"></script>
 </body>
 </html>

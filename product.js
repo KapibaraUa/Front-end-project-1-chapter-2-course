@@ -1,4 +1,3 @@
-
 const mainImage = document.querySelector('.main-img');
 const thumbnails = document.querySelectorAll('.thumbs img');
 thumbnails.forEach(img => { img.addEventListener('click', function() { mainImage.src = this.src;}); });
