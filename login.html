@@ -13,23 +13,23 @@
     <h1>Здравствуйте, <span id="userName"></span></h1>
 
     <div class="info">
-        <span>бонусы: <b id="bonuses"></b></span>
+        <span>бонусы: <b id="bonuses"></b> бонуса</span>
         <span>скидка: <b id="discount"></b>%</span>
     </div>
 
     <div class="content">
-        <div class="menu">
-            <div class="menu-item active" data-tab="personal">личные данные</div>
-            <div class="menu-item" data-tab="fav">избранное</div>
-            <div class="menu-item" data-tab="orders">история заказов</div>
+        <div class="menu" id="menu">
+            <div class="active" data-tab="profile">личные данные</div>
+            <div data-tab="favorites">избранное</div>
+            <div data-tab="orders">история заказов</div>
         </div>
 
-        <div class="tab-area">
-            <form class="form tab active" id="tab-personal">
+        <div class="panel">
+            <form class="form tab active" id="tab-profile">
                 <input type="text" id="lastName" placeholder="Фамилия">
                 <input type="text" id="firstName" placeholder="Имя">
                 <input type="text" id="middleName" placeholder="Отчество">
-                <input type="text" id="phone" placeholder="+7 (___) ___-__-__">
+                <input type="text" id="phone" placeholder="+380 (___) ___-__-__">
                 <input type="email" id="email" placeholder="Email">
 
                 <label class="check">
@@ -43,12 +43,50 @@
                 </label>
             </form>
 
-            <div class="tab" id="tab-fav">
-                <div id="favList"></div>
+            <div class="tab" id="tab-favorites">
+                <div class="fav-item">
+                    <img src="/image/jacket1.svg" alt="">
+                    <div class="fav-info">
+                        <div class="fav-title">Puffer</div>
+                        <div class="fav-sub">Black | M |</div>
+                        <div class="fav-price">190 $</div>
+                        <div class="fav-actions">
+                            <button class="btn" type="button">добавить в корзину</button>
+                            <button class="icon-btn" type="button">🗑</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fav-item">
+                    <img src="/image/glove.svg" alt="">
+                    <div class="fav-info">
+                        <div class="fav-title">Gloves</div>
+                        <div class="fav-sub">Emperial | S |</div>
+                        <div class="fav-price">55 $</div>
+                        <div class="fav-actions">
+                            <button class="btn" type="button">добавить в корзину</button>
+                            <button class="icon-btn" type="button">🗑</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="tab" id="tab-orders">
-                <div class="empty">Пока нет заказов</div>
+                <div class="order-card">
+                    <div class="order-top">
+                        <img src="/image/jacket1.svg" alt="">
+                        <img src="/image/jacket1.svg" alt="">
+                        <div class="order-badge">+2<br>вещи</div>
+                    </div>
+
+                    <div class="order-body">
+                        <div class="order-status">Завершен</div>
+                        <div class="order-number">Заказ #29923912</div>
+                        <div class="order-date-title">Дата заказа</div>
+                        <div class="order-date">10 марта 2023</div>
+                        <button class="order-btn" id="orderDetailsBtn" type="button">Подробнее</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
