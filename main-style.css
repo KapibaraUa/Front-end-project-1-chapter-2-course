@@ -1,261 +1,161 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
 }
+
 .containerMain {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
+
 .containerhighttext {
     font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
     width: 100%;
-    height: auto;
     background-color: red;
     display: flex;
-    justify-content: space-between;
-    padding: 0px 0px;
+    justify-content: center;
     color: white;
-    position: relative;  /* Чтобы текст знал, от чего центрироваться */
-    align-items: center; /* Выравнивание по вертикали */
 }
-.contbuttons
-{
-    display: flex;
-    
-}
-.contbuttons1
-{
-    margin-left: 100px;
-width: 80px;
-height: 26px;
-border-radius: 3px 0 0 0px;
-border: none;
-font-family: 'Cormorant';
-font-style: normal;
-font-weight: 400;
-font-size: 10px;
-line-height: 12px;
-color: #000000;
-}
-.contbuttons2
-{
 
-width: 80px;
-height: 26px;
-border-radius: 0px 3px 0 0px;
-border: none;
-font-family: 'Cormorant';
-font-style: normal;
-font-weight: 400;
-font-size: 10px;
-line-height: 12px;
-color: #000000;
+.containerhighttext p {
+    margin: 0;
 }
-.containerlogo
-{
+
+.containernav {
     width: 100%;
-    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.containernav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.containernav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.containernav ul li a {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 31px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.containerlogo {
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     border-bottom: 1px solid #000000;
-    
+    padding: 10px 0;
 }
-.btnimg
-{
+
+.btnimg {
     display: flex;
     align-items: center;
     margin: 0px 50px;
-    
 }
-.btnimg img
-{
-width: 24px;
-height: 24px;
-margin: 0px 10px;
 
+.btnimg img {
+    width: 24px;
+    height: 24px;
+    display: block;
 }
-.containernav
-{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-}
-.containernav nav ul
-{
-    list-style: none;
-}
-.containernav nav ul li
-{
-    display: inline-block;
-    margin: 0px 10px;
-}
-.containernav nav ul li a
-{
-font-family: 'Cormorant';
-font-style: normal;
-font-weight: 400;
-font-size: 26px;
-line-height: 31px;
-text-decoration: none;
-color: #000000;
-}
+
 .carousel-item img {
-    height: 750px;       
-    object-fit: cover;   
+    height: 750px;
+    object-fit: cover;
     width: 100%;
 }
-.containerhighttext p {
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.arrivalscont
-{
+
+.arrivalscont {
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: auto;
-    
 }
-.arrivalscont h2
-{
-font-family: 'Courier New';
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-line-height: 41px;
-color: #000000;
-text-align: center;
+
+.arrivalscont h2 {
+    font-family: 'Courier New';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    color: #000000;
+    text-align: center;
 }
-.products-grid
-{
+
+.products-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 }
-.product-card
-{
+
+.product-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-decoration: none; 
-    color: inherit; 
-    cursor: pointer; 
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
-.product-card img
-{
+
+.product-card img {
     width: 200px;
     height: 200px;
 }
-.product-card h3
-{
 
-
-font-family: 'Courier New';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 23px;
-color: #000000;
-
-
-}
-.product-card p
-{
-
-font-family: 'Courier New';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 18px;
-
-color: #000000;
-
-
+.product-card h3 {
+    margin-top: 10px;
 }
 
-.containerfooter
-{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid #000000;
+@media (max-width: 900px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btnimg {
+        margin: 0px 15px;
+    }
+
+    .containernav ul {
+        gap: 18px;
+    }
+
+    .containernav ul li a {
+        font-size: 20px;
+        line-height: 24px;
+    }
 }
 
-.containernav
-{
-    width: auto;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    margin: 0px 21px;
-}
-.containernav ul
-{
-    list-style: none;
-    font-family: 'Varela Round';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-text-align: center;
-color: #343232;
+@media (max-width: 520px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
 
-}
-.containernav ul li
-{
-    
-    margin: 0px 10px;
-}
-.containernav ul li a
-{
-font-family: 'Varela Round';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-display: flex;
-align-items: center;
-text-align: center;
-color: #343232;
-text-decoration: none;
-}
-.containercopyright
-{
-font-family: 'Volkhov';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 23px;
-text-align: center;
-color: #343232;
-}
-.containersocial
-{
-    width: auto;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0px 21px;
-}
-.containersocial img
-{
-    width: 24px;
-    height: 24px;
-}
+    .containerlogo {
+        justify-content: space-between;
+        padding: 10px 15px;
+    }
 
+    .btnimg {
+        margin: 0;
+    }
 
-
-
-
-
+    .containernav ul {
+        gap: 14px;
+        padding: 8px 0;
+    }
+}
