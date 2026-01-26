@@ -4,6 +4,9 @@ const footer = `<footer>
             
                 <ul> Polices
                     <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Contact Us</a></li>
                     <li><a href="#">Terms & Conditions</a></li>
                     
                 </ul>
